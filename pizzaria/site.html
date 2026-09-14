@@ -1,135 +1,228 @@
+```html
 <!DOCTYPE html>
-<!-- Informa ao navegador que este documento utiliza HTML5 -->
-
 <html lang="pt-br">
-<!-- Início do documento HTML e define o idioma como português do Brasil -->
 
 <head>
-    <!-- A tag <head> contém informações sobre a página que não aparecem diretamente no conteúdo -->
 
     <meta charset="UTF-8">
-    <!-- Permite utilizar acentos e caracteres especiais, como ç, ã e é -->
 
     <title>Pizzaria Sabor & Massa</title>
-    <!-- Define o título que aparece na aba do navegador -->
 
-    <meta name="description" content="Pizzaria Sabor & Massa - Pizzas deliciosas, feitas com ingredientes frescos e de qualidade. Peça sua pizza!">
-    <!-- Descrição da página, utilizada principalmente pelos mecanismos de busca -->
+    <meta name="description" content="Pizzaria Sabor & Massa - Pizzas deliciosas, feitas com ingredientes frescos e de qualidade.">
 
     <meta name="keywords" content="pizzaria, pizza, pizza artesanal, delivery, pizza em Mococa">
-    <!-- Palavras-chave relacionadas ao conteúdo da página -->
 
     <meta name="author" content="Pizzaria Sabor & Massa">
-    <!-- Informa o autor ou responsável pelo site -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Faz o site se adaptar a diferentes tamanhos de tela, como celular, tablet e computador -->
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 15px;
+        }
+
+        
+        
+
+        main {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            
+        }
+
+        section h2 {
+            color: #8b0000;
+            font-family: Georgia, serif;
+            font-size: 28px;
+        }
+
+        article {
+            
+            padding: 10px;
+        }
+
+        article h3 {
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        article p {
+            font-size: 17px;
+        }
+
+        ul {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+    </style>
 
 </head>
 
 <body>
-    <!-- A tag <body> contém tudo que será mostrado na página -->
 
-    <h1>Pizzaria da Moça</h1>
-    <!-- <h1> é o título principal da página -->
-
-    <img src="logo.png" alt="Logo da pizzaria" width="150" height="150">
-    <!-- <img> adiciona uma imagem -->
-    <!-- src indica o nome/local da imagem -->
-    <!-- alt descreve a imagem caso ela não carregue -->
-    <!-- width define a largura da imagem -->
-    <!-- height define a altura da imagem -->
-
+    <!-- Cabeçalho da página -->
     <header>
-        <!-- <header> representa o cabeçalho de uma seção ou da página -->
 
         <h1>Pizzaria Sabor & Massa</h1>
-        <!-- Título principal da pizzaria -->
 
-        <h2>Nosso Cardápio</h2>
-        <!-- <h2> cria um subtítulo -->
+        <img src="logo.png" alt="Logo da pizzaria">
 
-    </header>
-
-    <h2>Pizzas Salgadas</h2>
-    <!-- Título da seção de pizzas salgadas -->
-
-    <ul>
-        <!-- <ul> cria uma lista não ordenada, normalmente exibida com marcadores -->
-
-        <li>Calabresa - R$ 40,00</li>
-        <!-- <li> representa um item da lista -->
-
-        <li>Frango com Catupiry - R$ 45,00</li>
-        <!-- Item da lista -->
-
-        <li>Portuguesa - R$ 48,00</li>
-        <!-- Item da lista -->
-
-        <li>Muçarela - R$ 38,00</li>
-        <!-- Item da lista -->
-
-        <li>Presunto e Queijo - R$ 42,00</li>
-        <!-- Item da lista -->
-
-    </ul>
-    <!-- Fim da lista de pizzas salgadas -->
-
-
-    <h2>Pizzas Doces</h2>
-    <!-- Título da seção de pizzas doces -->
-
-    <ul>
-        <!-- Início da lista de pizzas doces -->
-
-        <li>Chocolate - R$ 42,00</li>
-        <!-- Item da lista -->
-
-        <li>Banana com Canela - R$ 40,00</li>
-        <!-- Item da lista -->
-
-        <li>Brigadeiro - R$ 45,00</li>
-        <!-- Item da lista -->
-
-    </ul>
-    <!-- Fim da lista de pizzas doces -->
-
-
-    <header>
-        <!-- Cabeçalho da seção de contatos -->
-
-        <h2>Nossos Contatos</h2>
-        <!-- Título da seção de contatos -->
+        <p>As melhores pizzas de Mococa!</p>
 
     </header>
 
-    <ul>
-        <!-- Lista com as informações de contato -->
 
-        <li>WhatsApp: 19 99132-7824</li>
-        <!-- Número de WhatsApp da pizzaria -->
+    <!-- Menu de navegação -->
+    <nav>
 
-        <li>Endereço: Cohab 2</li>
-        <!-- Endereço da pizzaria -->
+        <a href="#cardapio">Cardápio</a>
 
-    </ul>
+        <a href="#contato">Contato</a>
+
+        <a href="#sobre">Sobre Nós</a>
+
+    </nav>
 
 
-    <header>
-        <!-- Cabeçalho da seção "Sobre nós" -->
+    <!-- Conteúdo principal -->
+    <main>
 
-        <h2>Sobre Nós</h2>
-        <!-- Título da seção -->
+        <!-- Seção do cardápio -->
+        <section id="cardapio">
 
-    </header>
+            <h2>Nosso Cardápio</h2>
 
-    <p>
-        Somos uma loja de pizza localizada em Mococa, no bairro da Cohab 2.
-    </p>
-    <!-- <p> cria um parágrafo de texto -->
+
+            <article>
+
+                <h3>Pizzas Salgadas</h3>
+
+                <ul>
+                    <li>Calabresa - R$ 40,00</li>
+                    <li>Frango com Catupiry - R$ 45,00</li>
+                    <li>Portuguesa - R$ 48,00</li>
+                    <li>Muçarela - R$ 38,00</li>
+                    <li>Presunto e Queijo - R$ 42,00</li>
+                </ul>
+
+            </article>
+
+
+            <article>
+
+                <h3>Pizzas Doces</h3>
+
+                <ul>
+                    <li>Chocolate - R$ 42,00</li>
+                    <li>Banana com Canela - R$ 40,00</li>
+                    <li>Brigadeiro - R$ 45,00</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- Seção de contato -->
+        <section id="contato">
+
+            <h2>Nossos Contatos</h2>
+
+            <article>
+
+                <p><strong>WhatsApp:</strong> 19 99132-7824</p>
+
+                <p><strong>Endereço:</strong> Cohab 2 - Mococa</p>
+
+            </article>
+
+        </section>
+
+
+        <!-- Seção sobre a pizzaria -->
+        <section id="sobre">
+
+            <h2>Sobre Nós</h2>
+
+            <article>
+
+                <p>
+                    Somos uma loja de pizza localizada em Mococa,
+                    no bairro da Cohab 2.
+                </p>
+
+                <p>
+                    Trabalhamos com pizzas deliciosas e ingredientes
+                    de qualidade para oferecer uma ótima experiência
+                    aos nossos clientes.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer>
+
+        <p>Pizzaria Sabor & Massa - Mococa</p>
+
+        <p>Todos os direitos reservados.</p>
+
+    </footer>
 
 </body>
-<!-- Fim do conteúdo visível da página -->
 
 </html>
-<!-- Fim do documento HTML -->
+```
+
